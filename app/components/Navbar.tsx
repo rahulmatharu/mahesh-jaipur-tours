@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS } from "@/constants";
-import Button from "./Button";
 import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -60,9 +59,9 @@ const Navbar = () => {
     >
       <div className="max-container flex justify-between items-center w-full padding-container">
         <Link href="/" className="flex-shrink-0">
-          <Image src={"/tuk-tuk.png"} alt={"logo"} width={50} height={50} />
+          <Image src={"/logo.svg"} alt={"logo"} width={130} height={130} />
         </Link>
-        <ul className="hidden h-full gap-28 md:flex flex-grow justify-center ">
+        <ul className="hidden h-full gap-28 md:flex flex-grow justify-center pr-28">
           {NAV_LINKS.map((link) => (
             <div
               key={link.key}

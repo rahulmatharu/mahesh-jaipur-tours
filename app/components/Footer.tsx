@@ -11,7 +11,12 @@ const Footer = () => {
       <div className="padding-container py-6 max-container flex w-full flex-col gap-4">
         <div className="flex flex-col items-start justify-center gap-[15%] md:flex-row pr-10">
           <Link href="/" className="mb-10">
-            <Image src="/tuk-tuk.png" alt="logo" width={74} height={29} />
+            <Image
+              src="/logo.svg"
+              alt="Jaipur Tuk Tuk Tours Logo"
+              width={200}
+              height={200}
+            />
           </Link>
           <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
             {FOOTER_LINKS.map((columns) => (
