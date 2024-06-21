@@ -5,7 +5,6 @@ import Image from "next/image";
 
 const Highlights = () => {
   return (
-    // <section className="flex justify-center items-center flex-col-reverse gap-6 p-8 m-w-3xl md:space-x-6 md:flex-row">
     <section className="flex flex-col gap-6 p-8 m-w-3xl md:space-x-6 ">
       <div className="flex items-center justify-center flex-col-reverse gap-6 md:flex-row">
         <div className="flexCenter flex-col gap-6">
@@ -13,7 +12,6 @@ const Highlights = () => {
             Check out Jaipur’s landmarks and combine them with the fun of tuk
             tuk or private taxi travel on a city tour
           </h1>
-
           <ul className="font-bold flex-col gap-1">
             {HIGHLIGHTS.map((highlight, index) => (
               <HighlightItem text={highlight} index={index} />
