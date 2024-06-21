@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SectionHeading from "./SectionHeading";
+import Image from "next/image";
 
 interface Review {
   name: string;
@@ -63,14 +64,14 @@ const ReviewCarousel: React.FC = () => {
 
       <Slider {...settings}>
         {reviews.map((review, index) => (
-          <div className="flex justify-center">
+          <div className="flex justify-center" key={index}>
             <div className="max-w-4xl flex mx-auto">
               <div
                 key={index}
                 className="p-4 border-2 rounded-lg flex flex-col md:flex-row"
               >
                 <div className=" flex flex-col justify-between md:w-3/4 pr-0 pb-4 md:pr-4 md:pb-0">
-                  <img
+                  <Image
                     src={"tripadvisor-logo.svg"}
                     alt="TripAdvisor"
                     className=" h-5 mb-4 self-start"
@@ -97,7 +98,7 @@ const ReviewCarousel: React.FC = () => {
                 </div>
                 <div className="md:w-1/4 flex items-center justify-center">
                   {review.img && (
-                    <img
+                    <Image
                       src={review.img}
                       alt={review.heading}
                       className="object-cover rounded mb-4 max-h-72"

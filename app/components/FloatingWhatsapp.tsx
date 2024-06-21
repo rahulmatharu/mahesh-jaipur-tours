@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -11,7 +12,7 @@ const FloatingWhatsapp = () => {
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="h-11 w-11 rounded-full bg-[#25D366] opacity-75 -z-10 animate-slow-ping" />
       </div>
-      <img src="/whatsapp.svg" alt="whatsapp" className="w-7 h-7" />
+      <Image src="/whatsapp.svg" alt="whatsapp" className="w-7 h-7" />
     </Link>
   );
 };

@@ -24,20 +24,19 @@ const AboutMe = () => {
             Hi, I'm Mahesh...
           </h3>
           <p>
-            I'm a Jaipur native providing personalised private tours around the
-            Pink City in a private taxi or auto rikshaw (or tuk-tuk, as they are
-            called in Southeast Asia). With over 10 years of experience driving
-            a rickshaw, I know every nook and cranny of this vibrant city.
+            {
+              "I'm a Jaipur native providing personalised private tours around the Pink City in a private taxi or auto rikshaw (or tuk-tuk, as they are called in Southeast Asia). With over 10 years of experience driving a rickshaw, I know every nook and cranny of this vibrant city."
+            }
           </p>
           <p>
-            My tours are not just about visiting landmarks, they are about
-            experiencing Jaipur like a local. From the bustling markets to the
-            serene temples, I ensure you get a genuine taste of our rich
-            culture.
+            {
+              "My tours are not just about visiting landmarks, they are about experiencing Jaipur like a local. From the bustling markets to the serene temples, I ensure you get a genuine taste of our rich culture."
+            }
           </p>
           <p>
-            Whether you're here for a day or a week, my mission is to make your
-            visit unforgettable. Come, join me, and let's explore Jaipur!
+            {
+              "Whether you're here for a day or a week, my mission is to make your visit unforgettable. Come, join me, and let's explore Jaipur!"
+            }
           </p>
         </div>
       </section>

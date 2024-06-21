@@ -1,6 +1,7 @@
 import { HIGHLIGHTS } from "@/constants";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import Button from "./Button";
+import Image from "next/image";
 
 const Highlights = () => {
   return (
@@ -19,7 +20,7 @@ const Highlights = () => {
             ))}
           </ul>
         </div>
-        <img
+        <Image
           src="mahesh-auto.jpg"
           alt="Mahesh with Tuk Tuk"
           className="w-2/3 md:w-1/3 max-w-sm object-cover align-middle justify-center relative bg-white p-2 rounded-sm rotate-2 shadow-2xl"
