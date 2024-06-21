@@ -11,9 +11,11 @@ const Hero = ({ title }: HeroProps) => {
     <section>
       <div className="relative w-full h-96 bg-gray-900">
         <Image
-          src="hero.jpg"
+          src="/hero.jpg"
           alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover object-top "
+          className="absolute inset-0 w-full h-full object-cover object-top"
+          width="4045"
+          height="2879"
         />
         <div className="relative z-10 flex pb-8 items-end md:p-0 justify-center h-full text-center">
           <div className="text-white font-fugaz max-w-2xl text-shadow">

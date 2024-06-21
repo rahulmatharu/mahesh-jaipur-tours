@@ -8,12 +8,30 @@ export const NAV_LINKS = [
 //HOMEPAGE HIGHLIGHTS
 
 export const HIGHLIGHTS = [
-  "Fully customisable tours",
-  "Airport pick up/drop off",
-  "Tuk tuk and private taxi available",
-  "See all the top attractions",
-  "Discover hidden gems",
-  "Learn Jaipur's rich culture",
+  {
+    text: "Fully customisable tours",
+    key: "customisable",
+  },
+  {
+    text: "Airport pick up/drop off",
+    key: "airport",
+  },
+  {
+    text: "Tuk tuk and private taxi available",
+    key: "private",
+  },
+  {
+    text: "See all the top attractions",
+    key: "attractions",
+  },
+  {
+    text: "Discover hidden gems",
+    key: "gems",
+  },
+  {
+    text: "Learn Jaipur's rich culture",
+    key: "culture",
+  },
 ];
 
 // FOOTER SECTION

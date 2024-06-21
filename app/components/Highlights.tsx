@@ -13,15 +13,17 @@ const Highlights = () => {
             tuk or private taxi travel on a city tour
           </h1>
           <ul className="font-bold flex-col gap-1">
-            {HIGHLIGHTS.map((highlight, index) => (
-              <HighlightItem text={highlight} index={index} />
+            {HIGHLIGHTS.map((highlight) => (
+              <HighlightItem text={highlight.text} key={highlight.key} />
             ))}
           </ul>
         </div>
         <Image
-          src="mahesh-auto.jpg"
+          src="/gallery/gallery-16.jpeg"
           alt="Mahesh with Tuk Tuk"
           className="w-2/3 md:w-1/3 max-w-sm object-cover align-middle justify-center relative bg-white p-2 rounded-sm rotate-2 shadow-2xl"
+          width={1280}
+          height={720}
         />
       </div>
       <div className="flex flex-col gap-3 sm:flex-row sm:gap-5 items-center justify-center">
@@ -48,12 +50,12 @@ const Highlights = () => {
 
 type HighlightItemProps = {
   text: string;
-  index: number;
+  key: string;
 };
 
-const HighlightItem = ({ text, index }: HighlightItemProps) => {
+const HighlightItem = ({ text, key }: HighlightItemProps) => {
   return (
-    <li className="flex items-center" key={index}>
+    <li className="flex items-center" key={key}>
       <CheckBoxIcon className="text-4xl fill-pink-800 pr-2" />
       <h4 className=" text-pink-800 font-extrabold text-xl whitespace-nowrap">
         {text}

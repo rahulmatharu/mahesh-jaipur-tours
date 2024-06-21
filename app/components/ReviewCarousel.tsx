@@ -11,6 +11,8 @@ interface Review {
   name: string;
   heading: string;
   img?: string;
+  width: number;
+  height: number;
   description: string;
   date: string;
   stars: number;
@@ -24,6 +26,8 @@ const reviews: Review[] = [
       "Mahesh was a great guide and tuk tuk driver for my visit to Jaipur. Very helpful, generous, and funny I highly recommend him to anyone wanting to visit this part of the country 🙏",
     date: "April 2022",
     img: "/review-images/review-lucie.jpg",
+    width: 1100,
+    height: 1464,
     stars: 5,
   },
   {
@@ -33,6 +37,8 @@ const reviews: Review[] = [
       "Mahesh knows the city very well and he speaks good English. \n\n He is honest and very helpful. I recommend him.",
     date: "October 2022",
     img: "/review-images/review-compass.jpg",
+    width: 1400,
+    height: 1050,
     stars: 5,
   },
   {
@@ -43,6 +49,8 @@ const reviews: Review[] = [
       "I met Mahesh a tuktuk driver in Jaipur. I covered all sightseeing places with Mahesh. He was good in English and has good knowledge of sightseeing places around Jaipur. He helped me to book my tickets to Delhi also dropped me to the bus on my last day. He arranged everything perfectly and I'm so happy. Contact him when you visit Jaipur!",
     date: "October 2022",
     img: "/review-images/review-thusitha.jpg",
+    width: 1400,
+    height: 787,
     stars: 5,
   },
 ];
@@ -75,6 +83,8 @@ const ReviewCarousel: React.FC = () => {
                     src={"tripadvisor-logo.svg"}
                     alt="TripAdvisor"
                     className=" h-5 mb-4 self-start"
+                    width={3354}
+                    height={713}
                   />
                   <h2 className="text-xl font-bold mb-4">{review.heading}</h2>
                   <p className="text-gray-600">{review.description}</p>
@@ -102,6 +112,8 @@ const ReviewCarousel: React.FC = () => {
                       src={review.img}
                       alt={review.heading}
                       className="object-cover rounded mb-4 max-h-72"
+                      width={review.width}
+                      height={review.height}
                     />
                   )}
                 </div>
