@@ -62,7 +62,7 @@ const Navbar = () => {
         <Link href="/" className="flex-shrink-0">
           <Image src={"/tuk-tuk.png"} alt={"logo"} width={50} height={50} />
         </Link>
-        <ul className="hidden h-full gap-28 lg:flex flex-grow justify-center ">
+        <ul className="hidden h-full gap-28 md:flex flex-grow justify-center ">
           {NAV_LINKS.map((link) => (
             <div
               key={link.key}
@@ -83,7 +83,7 @@ const Navbar = () => {
           ))}
         </ul>
         <MenuIcon
-          className={`text-4xl lg:hidden ${
+          className={`text-4xl md:hidden ${
             scrolled ? "fill-white" : "fill-pink-800"
           } cursor-pointer`}
           onClick={toggleMenu}
@@ -91,7 +91,7 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-0 left-0 w-screen h-screen bg-pink-800 bg-opacity-90 flex items-center justify-center">
+        <div className="md:hidden absolute top-0 left-0 w-screen h-screen bg-pink-800 bg-opacity-90 flex items-center justify-center">
           <CloseIcon
             className="absolute top-4 right-4 text-white text-3xl cursor-pointer"
             onClick={toggleMenu}
