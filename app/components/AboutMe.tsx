@@ -21,7 +21,7 @@ const AboutMe = () => {
         </div>
         <div className="flex flex-col gap-2 md:w-3/4 text-gray-700 text-center text-lg md:px-6 md:text-left">
           <h3 className="text-pink-600 font-fugaz text-2xl">
-            Hi, I'm Mahesh...
+            {"Hi, I'm Mahesh..."}
           </h3>
           <p>
             {

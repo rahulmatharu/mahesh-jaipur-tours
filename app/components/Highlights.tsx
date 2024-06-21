@@ -15,8 +15,8 @@ const Highlights = () => {
           </h1>
 
           <ul className="font-bold flex-col gap-1">
-            {HIGHLIGHTS.map((highlight) => (
-              <HighlightItem text={highlight} />
+            {HIGHLIGHTS.map((highlight, index) => (
+              <HighlightItem text={highlight} index={index} />
             ))}
           </ul>
         </div>
@@ -50,11 +50,12 @@ const Highlights = () => {
 
 type HighlightItemProps = {
   text: string;
+  index: number;
 };
 
-const HighlightItem = ({ text }: HighlightItemProps) => {
+const HighlightItem = ({ text, index }: HighlightItemProps) => {
   return (
-    <li className="flex items-center">
+    <li className="flex items-center" key={index}>
       <CheckBoxIcon className="text-4xl fill-pink-800 pr-2" />
       <h4 className=" text-pink-800 font-extrabold text-xl whitespace-nowrap">
         {text}

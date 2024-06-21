@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 type HeroProps = {
   title: string;
 };
@@ -8,7 +10,7 @@ const Hero = ({ title }: HeroProps) => {
   return (
     <section>
       <div className="relative w-full h-96 bg-gray-900">
-        <img
+        <Image
           src="hero.jpg"
           alt="Hero Background"
           className="absolute inset-0 w-full h-full object-cover object-top "
