@@ -68,8 +68,9 @@ const ReviewCarousel: React.FC = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <SectionHeading title="TESTIMONIALS"></SectionHeading>
-
+      <h3 className="text-pink-600 font-fugaz text-2xl flex flex-col items-center justify-center mb-4 ">
+        {"Testimonials"}
+      </h3>
       <Slider {...settings}>
         {reviews.map((review, index) => (
           <div className="flex justify-center" key={index}>
