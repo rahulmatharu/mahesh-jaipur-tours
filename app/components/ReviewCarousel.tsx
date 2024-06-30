@@ -4,7 +4,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SectionHeading from "./SectionHeading";
 import Image from "next/image";
 
 interface Review {
@@ -19,6 +18,18 @@ interface Review {
 }
 
 const reviews: Review[] = [
+  {
+    name: "Charlie H",
+    heading:
+      "Great driving, very knowledgeable, and good humour. You won’t want to leave Jaipur!",
+    description:
+      "We visited Jaipur for Holi-festival in March, and what a time we had! \n\nWe met Mahesh on our first day and his enthusiasm, knowledge and humour made to be great company. \n\nWe spent the next 5 days with Mahesh, he took us all over Jaipur to famous sights and even places we hadn’t heard of. We spent Holiday with Mahesh and after he took us to his local area where he lived, an experience i’ll never forget. \n\nAfter Jaipur he organised us a driver to Agra which was super helpful. \n\nNot just a great driver, a good friend! \n\nMahesh made our experience in Jaipur super special and if I go back i’ll hope to see him again.",
+    date: "March 2024",
+    img: "/review-images/review-charlie.jpeg",
+    width: 828,
+    height: 674,
+    stars: 5,
+  },
   {
     name: "Lucie M",
     heading: "Great experience in Jaipur with Mahesh",
