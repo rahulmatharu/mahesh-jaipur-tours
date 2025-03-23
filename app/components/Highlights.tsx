@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Highlights = () => {
   return (
-    <section className="flex flex-col gap-6 p-8 m-w-3xl md:space-x-6 ">
+    <section className="flex flex-col gap-6 p-8 m-w-3xl md:space-x-6">
       <div className="flex items-center justify-center flex-col-reverse gap-6 md:flex-row">
         <div className="flexCenter flex-col gap-6">
           <h1 className="font-extrabold text-gray-800 text-2xl max-w-lg text-center">
