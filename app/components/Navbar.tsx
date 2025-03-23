@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Function to handle body scroll when menu opens/closes
+    // Function to handle body scroll when menu opens or closes
     const handleBodyScroll = () => {
       if (isMenuOpen) {
         document.body.style.overflow = "hidden";
